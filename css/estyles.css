@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    
+}
+ul{
+    background-color: rgb(163, 211, 245);
+    display: block;
+    text-align: right;
+    height: 90px;
+    list-style: none;
+    padding-right: 50px;
+}
+li{
+    display: inline;
+    margin: 20px;
+    cursor: pointer;
+    list-style: none;
+
+}
+a{
+    color: rgb(27, 27, 31);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(181, 178, 174)
+}
+.img-principal{
+  width: 100%;
+  
+}
