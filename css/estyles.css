@@ -6,12 +6,9 @@ nav{
     font-size: 1em;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
-    background-color:red;
     width: 100%;
 }
 ul{
-    background-color: rgb(163, 211, 245);
-    display: block;
     text-align: right;
     height: 90px;
     list-style: none;
@@ -23,7 +20,6 @@ li{
     margin: 20px;
     cursor: pointer;
     list-style: none;
-
 }
 a{
     color: rgb(27, 27, 31);
@@ -40,3 +36,40 @@ a:hover{
    /*  background-color: blue; */
    width: 130%;
 }
+.menu-hamburguer{
+   font-size: 1.8em;
+    float: right;
+    visibility: hidden;
+    margin-top: 20px;
+}
+.box-imagenes{
+  display: grid;
+  width: 90%;
+ 
+  margin: 0 auto; 
+  grid-template:"dsp-audi dsp-electro dsp-isusi";
+  
+}
+.dsp-audi{
+    grid-area: dsp-audi;
+}
+.dsp-electro{
+    grid-area: dsp-electro;
+}
+.dsp-isusi{
+    grid-area:dsp-isusi;
+}
+@media only screen and (max-width: 968px){
+    ul li{
+        visibility: hidden;
+    }
+    .menu-hamburguer{
+        visibility: visible;
+    }
+    .box-imagenes{
+        grid-template:"dsp-audi"
+                    "dsp-electro" 
+                    "dsp-isusi";
+    }
+}
+
